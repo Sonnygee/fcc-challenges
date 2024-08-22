@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background1: linear-gradient(
+        225deg,
+        #fff 0%,
+        #d7e1ec 75%,
+        #000 100%); 
+    --background2: #FAF9F6;
+    --background3: #177245;
+    --background4: #e57f99;
+    --background5: #ffb7c5;
+    --text1: #bf2909;
+    --text2: #f5fefd;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: var(--background1);
+}
+
+#header-img {
+    object-fit: contain;
+    width: 100px;
+    padding: 20px;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    background: var(--background2);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+#nav-bar a:hover {
+    color: #b87333;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#Register {
+    text-align: center;
+    margin-top: 170px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--background3);
+}
+
+#submit {
+    background: var(--background3);
+    color: var(--background2);
+    cursor: pointer;
+}
+
+h1, h2 {
+    font-family: "Montserrat";
+}
+
+h2 {
+    font-size: 1.65rem;
+}
+
+section::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+section {
+    margin: 40px 20px;
+}
+
+section:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.before-intro {
+    font-size: 1.5rem;
+    color: var(--text1);
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 1.8rem; 
+}
+
+.about-us p:not(.before-intro) {
+    text-align: justify;
+}
+
+#audio {    
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 10px 30px 10px;
+    padding: 20px 10px; 
+
+}
+
+#video {
+    width: 100%;
+    max-width: 720px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+    border:"none";
+    scrolling:"no";
+    overflow:"hidden";
+    frameborder:"0";
+    allowfullscreen:"true";
+    allow:"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share";
+}
+
+#Menu {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    max-width: 1400px;
+    background-color: var(--background5);
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+ 
+#Menu .items::after {
+    content: " ";
+    width: 350px;
+}
+
+#Menu .items {
+    background: var(--background2);
+    max-width: 350px;
+}
+
+#Menu .items:hover {
+    background-color: var(--background4);
+    color: #fff;
+}
+
+#Menu .items img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-items, 
+p {
+    padding: 5px;
+}
+
+select {
+    background-color: rgb(234, 130, 147);
+    color: var(--text2);
+    margin: 20px;
+}
+
+#address_icon,
+#phone_icon,
+#email_icon {
+    width: 2rem;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+}
+
+#Contact {
+    background-color: #000;
+    color: var(--text2);
+    display: flex;
+    margin: 20px 0 0 0;
+
+}
+
+.address-container {
+    color: var(--text2);
+    padding: 20px;
+}
+
+.address-container h4 {
+    font-size: 1.35rem;
+}
+
+.address-container label {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.container .button {
+    margin: 0 5px;
+    overflow: hidden;
+    background: #000;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.container .button:hover {
+    background-color: #d7e1ec;
+    width: 200px;
+}
+
+.container .button a {
+    text-decoration: none;
+    color: #fff;
+}
+    
+
+.container .button .icon {
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.button:nth-child(1):hover .icon {
+    background: #3b5998;
+}
+
+.button:nth-child(2):hover .icon {
+    background: linear-gradient(
+        45deg,
+        #ffde85 0%,
+        #f7792a 30%,
+        #f7504f 40%,
+        #d82b81 60%,
+        #d82b81 75%,
+        #9536c2 100%
+    );
+}
+
+.button:nth-child(3):hover .icon {
+    background: linear-gradient(#25d366,#25d366);
+}
+
+.container .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.container .button:hover .icon i {
+    color: #fff;
+}
+
+.container .button span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    line-height: 60px;
+}
+
+.button:nth-child(1):hover span {
+    color: #3b5998;
+}
+
+.button:nth-child(2):hover span {
+    color: #e1306c;
+}
+
+.button:nth-child(3):hover span {
+    color: #25d366;
+}
+
+footer {
+    background-color: #000;
+    color: #d7e1ec;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (min-width: 680px) {
+    #video {
+        height: 400px;
+    }
+}

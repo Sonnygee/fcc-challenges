@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <div class="logo-container">
+                <a href="#Home">
+                <img 
+                    id="header-img" 
+                    src="https://heniescakery.com/assets/img/logo/1.png" 
+                    alt="Hennie's Cakery logo" 
+                /></a>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="#Home">Home</a></li>
+                    <li><a class="nav-link" href="#Menu">Menu</a></li>
+                    <li><a class="nav-link" href="#Register">Register</a></li>
+                    <li><a class="nav-link" href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Register">
+        <h2>Freshly Baked Every Day</h2>
+        <form 
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="get">
+
+            <input 
+                type="email" 
+                id="email"
+                name="email"
+                pattern=".+@example\.com"
+                size="30"
+                placeholder="Enter your email address"
+                required />
+            
+            <input 
+                type="submit"
+                id="submit"
+                value="GET STARTED" />
+        </form>
+    </section>
+
+    <section id="Home">
+        <div class="about-us">
+            <p class="before-intro">
+                About Us
+            </p>
+            <h1 class="introduction">
+                We Bake Every Item From The Core Of Our Hearts
+            </h1>
+            <p>
+                Welcome to Henie's Cakery, where every creation is crafted with love and dedication. Established in 2022 as The Happy Jar and now revitalized in 2024, we specialize in delicious, egg-free baked goods served fresh every day. After studying in Canada and honing my skills, I am excited to bring my passion for baking back to India through a cloud kitchen model and online presence on Swiggy and Zomato.
+            </p>
+            <p>
+                At Henie's Cakery, quality is our top priority. Each product is meticulously tested and prepared to ensure a delightful experience for our customers. Whether you're craving cookies, customisable cakes, or indulgent cheesecakes, every bite from Henie's Cakery promises freshness and flavour.
+            </p>
+        </div>
+    </section>
+    <section id="audio">
+        <iframe 
+            id="video"
+            height="255"
+            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F102314351792966%2Fvideos%2F437240354495119%2F&show_text=false&width=560&t=0" 
+            loading="lazy"
+            >
+        </iframe>
+    </section>
+
+    <section id="Menu">
+        <div class="items">
+            <h3 class="menu-items">Cupcakes</h3>
+            <p>
+                Delight in our moist and flavourful cupcakes, available in a range of tempting flavours.
+            </p>
+            <img 
+                src="https://heniescakery.com/assets/img/products/Cupcake.jpg"
+                alt="sweet cupcake with strawberry on top" />
+            <select 
+                id="order" 
+                name="order" >
+                <option value="">Select</option>
+                <option value="6">6 pieces</option>
+                <option value="12">12 pieces</option>
+                <option value="18">18 pieces</option>
+                <option value="24">24 pieces</option>
+            </select>
+        </div>
+        <div class="items">
+            <h3 class="menu-items">Cookies</h3>
+            <p>
+                Enjoy a variety of egg-free cookies, perfect for any occasion.
+            </p>
+            <img 
+                src="https://heniescakery.com/assets/img/products/Cookies.jpg"
+                alt="freshly-baked cookies with chocolate almonds" />
+            <select 
+                id="order" 
+                name="order" >
+                <option value="">Select</option>
+                <option value="250">250 g</option>
+                <option value="500">500 g</option>
+                <option value="750">750 g</option>
+                <option value="1kg">1 kg</option>
+            </select>
+        </div>
+        <div class="items">
+            <h3 class="menu-items">Brownies</h3>
+            <p>
+                Deliciously Rich and Fudgy
+            </p>
+            <img 
+                src="https://heniescakery.com/assets/img/products/Brownies.jpg"
+                alt="fudgy brownies topped with chopped walnuts" />
+            <select 
+                id="order" 
+                name="order" >
+                <option value="">Select</option>
+                <option value="250">250 g</option>
+                <option value="500">500 g</option>
+                <option value="750">750 g</option>
+                <option value="1kg">1 kg</option>
+            </select>
+        </div>
+        <div class="items">
+            <h3 class="menu-items">Customisable Cakes</h3>
+            <p>
+                Create your dream cake with our customisable options, tailored to suit your preferences and celebrations.
+            </p>
+            <img 
+                src="https://heniescakery.com/assets/img/products/Cake.jpg"
+                alt="pink-flowers-designed cake" />
+            <select 
+                id="order" 
+                name="order" >
+                <option value="">Select</option>
+                <option value="250">250 g</option>
+                <option value="500">500 g</option>
+                <option value="750">750 g</option>
+                <option value="1kg">1 kg</option>
+            </select>
+        </div>
+        <div class="items">
+            <h3 class="menu-items">Brookies</h3>
+            <p>
+                Experience the rich flavours of our egg-free brookies, a perfect treat for any sweet tooth.
+            </p>
+            <img 
+                src="https://heniescakery.com/assets/img/products/Brookies.jpg"
+                alt="cookie dough topped with a layer of brownie batter" />
+            <select 
+                id="order" 
+                name="order" >
+                <option value="">Select</option>
+                <option value="250">250 g</option>
+                <option value="500">500 g</option>
+                <option value="750">750 g</option>
+                <option value="1kg">1 kg</option>
+            </select>
+        </div>
+        <div class="items">
+            <h3 class="menu-items">Blondies</h3>
+            <p>
+                Experience the rich flavours of our egg-free blondies, a perfect treat for any sweet tooth.
+            </p>
+            <img 
+                src="https://heniescakery.com/assets/img/products/blondies.jpg"
+                alt="gooey, chewy blondies filled with chocolate chips" />
+            <select 
+                id="order" 
+                name="order" >
+                <option value="">Select</option>
+                <option value="6">6 pieces</option>
+                <option value="12">12 pieces</option>
+                <option value="18">18 pieces</option>
+                <option value="24">24 pieces</option>
+            </select>
+        </div>
+        <div class="items">
+            <h3 class="menu-items">Donuts</h3>
+            <p>
+                Savour our freshly baked donuts, available in a selection of delicious glazes and toppings.
+            </p>
+            <img 
+                src="https://heniescakery.com/assets/img/products/Donuts.jpg"
+                alt="sweet assorted doughnuts" />
+            <select 
+                id="order" 
+                name="order" >
+                <option value="">Select</option>
+                <option value="6">6 pieces</option>
+                <option value="12">12 pieces</option>
+                <option value="18">18 pieces</option>
+                <option value="24">24 pieces</option>
+            </select>
+        </div>
+        <div class="items">
+            <h3 class="menu-items">Macarons</h3>
+            <p>
+                Treat yourself to our delicate and colourful macarons, a French-inspired delight.
+            </p>
+            <img 
+                src="https://heniescakery.com/assets/img/products/Macroons.jpg"
+                alt="flavorful and colorful macarons" />
+            <select 
+                id="order" 
+                name="order" >
+                <option value="">Select</option>
+                <option value="6">6 pieces</option>
+                <option value="12">12 pieces</option>
+                <option value="18">18 pieces</option>
+                <option value="24">24 pieces</option>
+            </select>
+        </div>
+        <div class="items">
+            <h3 class="menu-items">Cheesecakes</h3>
+            <p>
+                Dive into creamy, egg-free cheesecakes in various flavours, sure to satisfy dessert lovers.
+            </p>
+            <img 
+                src="https://heniescakery.com/assets/img/products/Cheesecake.jpg"
+                alt="creamy and ultra cheesy cheesecake" />
+            <select 
+                id="order" 
+                name="order" >
+                <option value="">Select</option>
+                <option value="6">6 pieces</option>
+                <option value="12">12 pieces</option>
+                <option value="18">18 pieces</option>
+                <option value="24">24 pieces</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="address-container">
+            <h4>
+                Office Address
+            </h4>
+            <div class="location_container">
+                <img 
+                    id="address_icon" 
+                    src="https://i.pinimg.com/474x/e1/81/b7/e181b7cb6dec98c4d8efb94cfa77471c.jpg"
+                     />
+                <label 
+                    for="address_icon" 
+                    name="address"
+                    >Vesu, Surat, Gujarat. 395007
+                </label>
+            </div>
+            <div class="phone_container">
+                <img 
+                    id="phone_icon"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb7mNKcZS1uH1vihByz9ElfRE8Ike0oInKwA&s"
+                     />
+                <label
+                    for="phone_icon"
+                    name="phone"
+                    >+91 90165-12120
+                </label>
+            </div>
+            <div class="email_container">
+                <img
+                    id="email_icon"
+                    src="https://thumbs.dreamstime.com/b/email-vector-icon-black-white-mail-illustration-solid-linear-message-icon-eps-93005347.jpg"
+                     />
+                <label
+                    for="email_icon"
+                    name="email"
+                    >heniescakery@gmail.com
+                </label>
+            </div>
+            <div class="container">
+                <div class="button">
+                    <div class="icon"><a href="https://www.facebook.com/profile.php?id=61561478279324&mibextid=LQQJ4d"><i class="fa fa-facebook-f"></i></a></div>
+                    <span>Facebook</span>
+                </div>
+                <div class="button">
+                    <div class="icon"><a href="https://www.instagram.com/henies.cakery_?igsh=NjFpbXJjbmhzYXds&utm_source=qr"><i class="fa fa-instagram"></i></a></div>
+                    <span>Instagram</span>
+                </div>
+                <div class="button">
+                    <div class="icon"><a href="https://api.whatsapp.com/send/?phone=%2B9016512120&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a></div>
+                    <span>WhatsApp</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        All Rights Reserved. Copyright Henie's Cakery 2024.
+    </footer>
+</body>
+</html>

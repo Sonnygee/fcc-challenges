@@ -1,0 +1,151 @@
+h1 {
+    text-align: center;
+  }
+
+h2 {
+    text-align: center;
+  }
+  
+  .container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    rotate: 40deg;
+  }
+  
+  .marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+  }
+
+  .cap {
+    width: 60px;
+    height: 25px;
+  }
+
+  .cap, .sleeve {
+    display: inline-block;
+  }
+
+  .sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+  }
+  
+  .red {
+    background: linear-gradient( rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  }
+  
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+  }
+  
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsla(223,59%,31%,0.8);
+  }
+  
+  /* These are the combination for the primary colors */
+  
+  .four {
+    background-color: rgb(0,0,0);
+    color: white;
+    text-align: center;
+  }
+
+  .five {
+    background-color: rgb(255,255,255);
+    border: solid 1px gray;
+    color: black;
+    text-align: center;
+  }
+
+  .six {
+    background-color: rgb(255,0,0);
+    color: White;
+    text-align: center;
+  }
+
+  .seven {
+    background-color: rgb(0,255,0);
+    color: black;
+    text-align: center;
+  }
+
+  .eight {
+    background-color: rgb(0,0,255);
+    color: white;
+    text-align: center;
+  }
+  
+  /* These are the combination for the secondary colors */
+
+  .nine {
+    background-color: rgb(255,255,0);
+    color: Black;
+    text-align: center;
+  }
+
+  .ten {
+    background-color: rgb(0,255,255);
+    color: black;
+    text-align: center;
+  }
+
+  .eleven {
+    background-color: rgb(255,0,255);
+    color: black;
+    text-align: center;
+  }
+
+/* These are the combination for the tertiary colors */
+
+  .twelve {
+    background-color: rgb(255,127,0);
+    color: Black;
+    text-align: center;
+  }
+
+  .thirteen {
+    background-color: rgb(0,255,127);
+    color: black;
+    text-align: center;
+  }
+
+  .fourteen {
+    background-color: rgb(127,0,255);
+    color: white;
+    text-align: center;
+  }
+
+  .fifteen {
+    background-color: rgb(127,255,0);
+    color: white;
+    text-align: center;
+  }
+
+  .sixteen {
+    background-color: rgb(0,127,255);
+    color: black;
+    text-align: center;
+  }
+
+.seventeen {   
+    background-color: rgb(255,0,127);
+    color: white;
+    text-align: center;
+  }
+
+  /* Linear gradient element for colors */
+selector {
+    background: linear-gradient(90deg,color1,color2,color3,...)
+}
+
+/* color stops */
+selector {
+    background: linear-gradient(90deg,color1 50%,color2,color3,...) 
+}

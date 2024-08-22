@@ -1,0 +1,127 @@
+    <!DOCTYPE html>
+<html lang="en">
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development for Beginners</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>Web Development for Beginners</header>
+            <ul>
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#HTML" class="nav-link">HTML</a></li>
+                <li><a href="#CSS" class="nav-link">CSS</a></li>
+                <li><a href="#CSS_Selectors" class="nav-link">CSS Selectors</a></li>
+                <li><a href="#CSS_Pseudo-classes" class="nav-link">CSS Pseudo-classes</a></li>
+            </ul>
+        </nav>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>In this course, we will be learning web development, absolutely free, from the very beginning. So I have been learning web development for weeks now through <a href="https://www.freecodecamp.org">freeCodeCamp website</a> and other learning references such as YouTube videos. Now, if you would just like to build a website for yourself or your business, this course is not for you. But, if you think web development is an on-demand career with high-paying checks, and if you believe that coding is cool, then this course is for you! </p>
+            <p>So, the first thing to do is to install some professionao web development tools. The good news is, they are all free! We all know that web developers love free stuff.</p>
+                <ol>
+                    <li>Download and install Visual Studeio (VS) code on your web browser. Here's the <a href="https://code.visualstudio.com/download">link</a>. This is the most popular text editor these days, and it's totally free!</li>
+                    <li>Once you instaled VS code on your computer/laptop, it is also helpful to install some extensions such as the LiveServer on the Marketplace. </li>
+                    <li>To start on a project, click on the File > Open a Folder, then select any folder on your computer to store all of the contents of your project in one place. </li> 
+                    <li>Next, click on the 'New File' button and type 'index.html'. This is the standard name developers usually have if they are beginning coding. On the empty text editor, type '!' then 'Tab', and you would see the so-called "website basic template" as shown below.
+                    <code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;title&gt;Document&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                    </li>
+                    <li>Finally, to see your progress real-time, you can use the live-server you installed on your VS code and run the code using your browser.</li>
+                </ol>
+            <p>You can always save your progress on your computer or laptop using the keyboard command
+                    <code>
+                        <kbd>CMD</kbd> + <kbd>S</kbd>
+                    </code></p>
+        </section>
+        <section class="main-section" id="HTML">
+            <header>HTML</header>
+            <p>HTML is the standard markup language for creating Web pages.</p>
+            <p>What is HTML?</p>
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML is the standard markup language for creating Web pages</li>
+                <li>HTML describes the structure of a Web page</li>
+                <li>HTML consists of a series of elements</li>
+                <li>HTML elements tell the browser how to display the content</li>
+                <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+            </ul>
+            <p>What is an HTML element? An HTML element is defined by a start tag, some content, and an end tag:
+            <code>&lt;tagname&gt; Content goes here... &lt;tagname&gt; </code> 
+            The HTML <strong>element</strong> is everything from the start tag to the end tag.
+        </p>
+        </section>
+        <section class="main-section" id="CSS">
+            <header>CSS</header>
+            <p>What is CSS?</p>
+            <ul>
+                <li>CSS stands for Cascading Style Sheets</li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                <li>External stylesheets are stored in CSS files</li>
+            </ul>
+            <p>Why use CSS? CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes. An example of a CSS code is as follows: 
+                <code>
+                    body {
+                        background-color: lightblue;
+                      }
+                      
+                    h1 {
+                        color: white;
+                        text-align: center;
+                      }
+                      
+                    p {
+                        font-family: verdana;
+                        font-size: 20px;
+                      }
+                </code>
+                </p>
+        </section>  
+        <section class="main-section" id="CSS_Selectors">
+            <header>CSS Selectors</header>
+            <p>In CSS, selectors are patterns used to select the element(s) you want to style.</p>
+            <p>An example of such is as follows:
+                <code>
+                    .class > .intro > Selects all elements with class="intro"
+                </code>
+                </p>
+        </section>
+        <section class="main-section" id="CSS_Pseudo-classes">
+            <header>CSS Pseudo-classes</header>
+            <p>A pseudo-class is used to define a special state of an element. For example, it can be used to:
+                <ul>
+                    <li>Style an element when a user mouses over it</li>
+                    <li>Style visited and unvisited links differently</li>
+                    <li>Style an element when it gets focus</li>
+                </ul>
+            </p>
+            <p>The syntax of pseudo-classes is shown below:
+                <code>
+                    selector:pseudo-class {
+                        property: value;
+                      }
+                </code>
+                </p>
+        </section>
+    </main>
+    <footer>
+        Web Development for Beginners </br>
+        All Rights Reserved. Copyright 2024.
+    </footer>
+</body>
+</html>

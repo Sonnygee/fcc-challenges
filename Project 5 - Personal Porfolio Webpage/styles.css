@@ -1,0 +1,79 @@
+:root {
+    --background1: linear-gradient(90deg, #353839 50%, #16161a);
+    --background2: #59788E;
+    --background3: #0C3BAA;
+    --heading: #fffffe;
+    --text1: #94a1b2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: var(--background1);
+    text-align: center;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    background-color: var(--background3);
+}
+
+.navbar.links {
+    list-style: none;
+    text-align: right;
+    margin: 0 20px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar a:hover {;
+    background-color: var(--background2);
+}
+
+section:not(.header) {
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background1);
+    color: var(--heading);
+}
+
+#welcome-section h1 {
+    font-size: 3.5rem;
+    margin-top: 30vh;
+}
+
+#welcome-section p {
+    font-size: 2rem;
+    color: var(--text1);
+    font-style: italic;
+}
+
+#projects {
+    margin: 0;
+    background-color: var(--background2);
+}
